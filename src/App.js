@@ -10,10 +10,16 @@ const App = () => {
     const updatedBooks = [...books, { id: randomId, title }];
     setBooks(updatedBooks);
   };
+
+  const deleteBookById = (id) => {
+    const updatedBooks = books.filter((book) => book.id !== id);
+    setBooks(updatedBooks);
+  };
+
   return (
     <div className="App">
       {console.log(books)}
-      <BookList books={books} />
+      <BookList books={books} onDelete={deleteBookById} />
       <BookCreate onCreate={createBook} />
     </div>
   );
