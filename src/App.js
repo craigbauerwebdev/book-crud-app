@@ -1,6 +1,7 @@
 import { useState } from "react";
 import BookCreate from "./Components/BookCreate";
 import BookList from "./Components/BookList";
+import "./styles/global.scss";
 
 const App = () => {
   const [books, setBooks] = useState([]);
