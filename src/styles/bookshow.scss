@@ -1,6 +1,8 @@
+@import "./variables.scss";
+
 .book-show {
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid $primary-color;
   border-radius: 5px;
   padding: 45px 30px 10px;
   margin: 10px;
