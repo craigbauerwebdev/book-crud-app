@@ -1,0 +1,27 @@
+# Get all Books
+GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Add a Book
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "War and Peace 2"
+}
+
+###
+
+PUT http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "New Title"
+}
+
+###
+
+Delete http://localhost:3001/books/2 HTTP/1.1
+Content-Type: application/json
