@@ -22,13 +22,12 @@ const BookShow = ({ book, onDelete, onEdit }) => {
       <img alt="books" src={`https://picsum.photos/seed/${book.id}/300/200`} />
       {!showEdit && <h2>{book.title}</h2>}
       {showEdit && <BookEdit book={book} onSubmit={handleSubmit} />}
-      <div className="icons">
-        <div className="edit" onClick={handleEditClick}>
-          <img src="/icons/edit.png" height="30" />
-        </div>
-        <div className="delete" onClick={handleDeleteClick}>
-          <img src="/icons/close.png" height="30" />
-        </div>
+      <div className="icons"></div>
+      <div className="edit" onClick={handleEditClick}>
+        <img src="/icons/edit.png" height="30" />
+      </div>
+      <div className="delete" onClick={handleDeleteClick}>
+        <img src="/icons/close.png" height="30" />
       </div>
     </div>
   );

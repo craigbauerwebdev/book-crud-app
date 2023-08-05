@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import axios from "axios";
 import BookCreate from "./Components/BookCreate";
 import BookList from "./Components/BookList";
@@ -20,8 +20,6 @@ const App = () => {
     const response = await axios.post(`http://localhost:3001/books`, {
       title: title,
     });
-    //console.log(response);
-    //const randomId = Math.round(Math.random() * 9999);
     const updatedBooks = [...books, response.data];
     setBooks(updatedBooks);
   };
