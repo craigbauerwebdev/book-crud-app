@@ -7,11 +7,9 @@ import "./styles/global.scss";
 const App = () => {
   const { fetchBooks } = useContext(BooksContext);
 
-  /* eslint-disable */
   useEffect(() => {
     fetchBooks();
   }, []);
-  /* eslint-enable */
 
   return (
     <div className="App">
